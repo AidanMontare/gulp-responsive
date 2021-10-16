@@ -1,7 +1,6 @@
 'use strict'
 
 // eslint-disable-next-line
-let flog = require('fancy-log')
 const assert = require('assert')
 const path = require('path')
 const fs = require('fs')
@@ -29,6 +28,4 @@ exports.makeFile = makeFile
 exports.assertFile = assertFile
 
 // Force mute gulp logger in test environment
-if (process.env.NODE_ENV === 'test') {
-  flog = function () {}
-}
+// This code was removed because it is currently unused.
