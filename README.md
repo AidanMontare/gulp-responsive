@@ -4,6 +4,8 @@
 
 > Generates images at different sizes
 
+**In this forked version, I update all dependencies to the latest as of 2021-10-16. I also make some minor changes to support those new depedencies**
+
 ## Installation
 
 `gulp-responsive` depends on [sharp](https://github.com/lovell/sharp). Sharp is one of the fastest Node.js modules for resizing JPEG, PNG, WebP and TIFF images.
