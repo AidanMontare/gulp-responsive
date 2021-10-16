@@ -23,9 +23,9 @@ describe('gulp-responsive', function () {
       ]
       const stream = responsive(config)
 
-      stream.on('data', function (file) {
+      stream.on('data', async function (file) {
         assertFile(file)
-        assert.strictEqual(fileType(file.contents).mime, 'image/jpeg')
+        assert.strictEqual(await fileType(file.contents).mime, 'image/jpeg')
       })
 
       stream.on('end', function () {
@@ -45,9 +45,9 @@ describe('gulp-responsive', function () {
       ]
       const stream = responsive(config)
 
-      stream.on('data', function (file) {
+      stream.on('data', async function (file) {
         assertFile(file)
-        assert.strictEqual(fileType(file.contents).mime, 'image/jpeg')
+        assert.strictEqual(await fileType(file.contents).mime, 'image/jpeg')
       })
 
       stream.on('end', function () {
@@ -68,9 +68,9 @@ describe('gulp-responsive', function () {
       ]
       const stream = responsive(config)
 
-      stream.on('data', function (file) {
+      stream.on('data', async function (file) {
         assertFile(file)
-        assert.strictEqual(fileType(file.contents).mime, 'image/webp')
+        assert.strictEqual(await fileType(file.contents).mime, 'image/webp')
       })
 
       stream.on('end', function () {
